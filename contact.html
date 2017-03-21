@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Day - HTML Bootstrap Template</title>
+    <title>Betel Lajes - Contato</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -54,7 +54,7 @@
     </header><!--/header-->	
 	
 	<div class="map">
-	   <div id="google-map" data-latitude="40.713732" data-longitude="-74.0092704"></div>
+	   <div id="google-map" data-latitude="-15.612931" data-longitude="-56.040292"></div>
 	</div>
 	
 	<section class="contact-page">
@@ -95,13 +95,13 @@
 	<footer>
 		<div class="container">
 			<div class="col-md-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
-				<h4>About Us</h4>
-				<p>Day is tellus ac cursus commodo, mauesris condime ntum nibh, ut fermentum mas justo sitters.</p>						
+				<h4>Betel Lajes</h4>
+				<p>Industria de pré-moldados.</p>
 				<div class="contact-info">
 					<ul>
-						<li><i class="fa fa-home fa"></i>Suite 54 Elizebth Street, Victoria State Newyork, USA </li>
-						<li><i class="fa fa-phone fa"></i> +38 000 129900</li>
-						<li><i class="fa fa-envelope fa"></i> info@domain.net</li>
+						<li><i class="fa fa-home fa"></i>Rua 21, quadra 39, lote 19, Recanto dos Pássaros - CEP: 78075-410 Cuiabá MT.</li>
+						<li><i class="fa fa-phone fa"></i> +55 65 3664 4374</li>
+						<li><i class="fa fa-envelope fa"></i> betel.ac@gmail.com</li>
 					</ul>
 				</div>
 			</div>
@@ -180,9 +180,11 @@
             function initialize_google_map() {
                 var myLatlng = new google.maps.LatLng(get_latitude, get_longitude);
                 var mapOptions = {
-                    zoom: 14,
+                    zoom: 15,
                     scrollwheel: false,
-                    center: myLatlng
+                    center: myLatlng,
+                    streetViewControl: true/*,
+                    styles: [{featureType:'satellite'}]*/
                 };
                 var map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
                 var marker = new google.maps.Marker({
@@ -193,7 +195,7 @@
             google.maps.event.addDomListener(window, 'load', initialize_google_map);
         })(jQuery);
     </script>	
-    <script src="contactform/contactform.js"></script>
+    <!--script src="contactform/contactform.js"></script-->
     
 </body>
 </html>
