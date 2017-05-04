@@ -67,9 +67,10 @@
     </header><!--/header-->	
 	
 	<div class="map">
-	   <div id="google-map" data-latitude="-15.612931" data-longitude="-56.040292"></div>
+	   <!--div id="google-map" data-latitude="-15.612931" data-longitude="-56.040292"></div-->		
+		
 	</div>
-	
+	<iframe width="100%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=betel%20lajes&key=AIzaSyA57tZDkN44618vm6oGIn8Q1wCXlo9ZdW0" allowfullscreen></iframe>
 	<!--<section class="contact-page">
         <div class="container">
             <div class="text-center">        
@@ -160,28 +161,30 @@
 	<script src="js/wow.min.js"></script>
 	<script>wow = new WOW({}).init();</script>	
 	<script>
-        (function ($) {
-            //Google Map
-            var get_latitude = $('#google-map').data('latitude');
-            var get_longitude = $('#google-map').data('longitude');
+	
+        // (function ($) {
+        //     //Google Map
+        //     var get_latitude = $('#google-map').data('latitude');
+        //     var get_longitude = $('#google-map').data('longitude');
 
-            function initialize_google_map() {
-                var myLatlng = new google.maps.LatLng(get_latitude, get_longitude);
-                var mapOptions = {
-                    zoom: 16,
-                    scrollwheel: false,
-                    center: myLatlng,
-                    streetViewControl: true/*,
-                    styles: [{featureType:'satellite'}]*/
-                };
-                var map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
-                var marker = new google.maps.Marker({
-                    position: myLatlng,
-                    map: map
-                });
-            }
-            google.maps.event.addDomListener(window, 'load', initialize_google_map);
-        })(jQuery);
+        //     function initialize_google_map() {
+        //         var myLatlng = new google.maps.LatLng(get_latitude, get_longitude);
+        //         var mapOptions = {
+        //             zoom: 16,
+        //             scrollwheel: false,
+        //             center: myLatlng,
+        //             streetViewControl: true/*,
+        //             styles: [{featureType:'satellite'}]*/
+        //         };
+        //         var map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
+        //         var marker = new google.maps.Marker({
+        //             position: myLatlng,
+        //             map: map
+        //         });
+        //     }
+        //     google.maps.event.addDomListener(window, 'load', initialize_google_map);
+        // })(jQuery);
+
     </script>	
     <!--script src="contactform/contactform.js"></script-->
     
